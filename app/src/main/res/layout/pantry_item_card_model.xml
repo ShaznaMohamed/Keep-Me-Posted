@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/card_margin"
+    android:layout_marginLeft="@dimen/card_margin"
+    android:layout_marginRight="@dimen/card_margin">
+
+    <LinearLayout
+        style="@style/Widget.CardContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:textAppearance="@style/Narrow"
+                android:layout_height="wrap_content"
+                android:text="@string/item"
+                android:layout_marginBottom="15dp"
+                android:id="@+id/itemTitlelbl"
+                android:layout_weight=".70"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:id="@+id/nameTxtPI"
+                android:layout_weight=".30"
+                android:textAppearance="@style/Title"/>
+
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/quantity"
+                android:textAppearance="@style/Narrow"
+                android:layout_marginBottom="15dp"
+                android:id="@+id/itemQuantitylbl"
+                android:layout_weight=".70"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:text="5"
+                android:id="@+id/qtyLoTxtPI"
+                android:textAppearance="@style/Medium"
+                android:layout_weight=".30"/>
+
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="@string/exp_date"
+                android:textAppearance="@style/Narrow"
+                android:layout_marginBottom="15dp"
+                android:layout_width="0dp"
+                android:layout_weight=".30"
+                android:id="@+id/itemUnitpricelbl"/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:layout_marginBottom="15dp"
+                android:text="18/10/2019"
+                android:layout_width="0dp"
+                android:layout_weight=".70"
+                android:id="@+id/expDateTxtPI"/>
+
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="@string/total_price"
+                android:textAppearance="@style/Narrow"
+                android:layout_marginBottom="15dp"
+                android:layout_width="0dp"
+                android:layout_weight=".30"
+                android:id="@+id/itemTotalpricelbl"/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:layout_marginBottom="15dp"
+                android:text="1750.00"
+                android:layout_width="0dp"
+                android:layout_weight=".70"
+                android:id="@+id/priceTxtPI"/>
+
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkBoxEditPI"
+                    android:layout_marginTop="5dp"
+                    android:checked="false"/>
+
+                <Button
+                    android:id="@+id/imageButtonDeletePI"
+                    android:onClick="onCancelButtonPressed"
+                    android:text="@string/delete"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:elegantTextHeight="false"
+                    android:textAlignment="center"
+                    android:layout_width="0dp"
+                    android:layout_weight=".50"
+                    style="@style/MyButtonCancel" />
+
+                <Button
+                    android:id="@+id/imageButtonEditPI"
+                    android:onClick="onAddButtonPressed"
+                    android:text="@string/edit"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:elegantTextHeight="false"
+                    android:textAlignment="center"
+                    android:layout_width="0dp"
+                    android:layout_weight=".50"
+                    style="@style/MyButton" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

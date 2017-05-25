@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="daterange">
+        <item name="select">Select a date range</item>
+        <item name="July">01/07/2016 - 31/07/2016</item>
+        <item name="August">01/08/2016 - 30/08/2016</item>
+        <item name="September">01/09/2016 - 31/09/2016</item>
+        <item name="October">01/10/2016 - 30/10/2016</item>
+    </string-array>
+</resources>

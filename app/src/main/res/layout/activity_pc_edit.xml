@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_to_do_item_edit"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.keepmeposted.views.activity.ToDoItemEditActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:elevation="0dp"
+        android:id="@+id/appBarLayout">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/card_margin"
+        android:layout_marginRight="@dimen/card_margin"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/appBarLayout"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="133dp"
+            android:layout_weight="0.41"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/topbar"
+            android:layout_alignParentEnd="true">
+
+            <TextView
+                android:text="Category name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/topbar"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="15dp"
+                android:id="@+id/textViewItem" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint=""
+                android:ems="10"
+                android:layout_marginLeft="15dp"
+                android:id="@+id/editTextPc" />
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="74dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/pccanceltxtview"
+                    android:layout_height="70dp"
+                    android:text="CANCEL"
+                    android:background="@color/white"
+                    android:layout_width="128dp"
+                    android:paddingLeft="40dp"
+                    android:textSize="18dp"
+                    android:paddingTop="10dp"
+                    style="@style/MyButtonCancel"
+                    android:layout_weight="0.31" />
+
+                <TextView
+                    android:id="@+id/pcsavetxtview"
+                    android:layout_height="67dp"
+                    android:text="SAVE"
+                    android:layout_width="119dp"
+                    android:paddingLeft="60dp"
+                    android:background="@color/white"
+                    style="@style/MyButton"
+                    android:textSize="18dp"
+                    android:paddingTop="10dp"
+                    android:layout_weight="0.35" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

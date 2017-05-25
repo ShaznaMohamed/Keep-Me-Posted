@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:paddingBottom="5dp">
+
+                <AutoCompleteTextView
+                    android:id="@+id/nameIncomeEdit"
+                    android:layout_width="180dp"
+                    android:layout_height="50dp"
+                    android:hint="Income type"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:paddingTop="20dp"
+                android:paddingBottom="5dp"
+                android:layout_width="30dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:layout_height="50dp"
+                android:text=" : "
+                android:maxLines="1"
+                android:singleLine="true" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="280dp"
+                android:paddingBottom="50dp">
+
+                <AutoCompleteTextView
+                    android:id="@+id/amountIncomeaEdit"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:hint="Amount"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+        </TableRow>
+
+    </TableLayout>
+
+    <Button android:id="@+id/saveIncomeBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edit"
+        android:clickable="true"
+        android:background="@android:color/holo_blue_dark"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/holo_red_dark"/>
+
+
+
+</LinearLayout>

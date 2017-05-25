@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.keepmeposted">
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!-- Tell the system this app requires OpenGL ES 2.0. -->
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <meta-data
+        android:name="com.google.android.geo.API_KEY"
+        android:value="AIzaSyDayQtJSTPXqHPYmTltAfQTS9F0gjPMjnY" />
+
+    <application
+        android:name=".utility.misc.Application"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" />
+        <activity android:name=".intro.MyIntro" />
+        <activity
+            android:name=".views.activity.ShoppinglistItemDetailsActivity"
+            android:label="Details" />
+        <activity android:name=".views.activity.ToDoItemEditActivity" />
+        <activity android:name=".views.activity.PantryListCategoryActivity" />
+        <activity android:name=".views.activity.PcEditActivity" />
+        <activity android:name=".views.activity.PantryListItemActivity" />
+        <activity android:name=".views.activity.PiEditActivity" />
+        <activity android:name=".views.activity.RecipeActivity" />
+        <activity android:name=".views.activity.URLActivity" />
+        <activity
+            android:name=".intro.SplashScreen"
+            android:theme="@style/SplashScreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".views.activity.Home" />
+        <activity
+            android:name=".views.activity.GoogleSign"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".views.activity.Sign_Up"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">        </activity>
+
+        <activity android:name=".BarcodeCaptureActivity"
+            android:label="Read Barcode"/>
+
+        <activity android:name=".views.activity.Map" />
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".views.activity.Sign_In"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".views.activity.Reset_Password" />
+
+        <receiver android:name=".javaui.AlertReciever" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".MapsActivity_1"
+            android:label="@string/title_activity_maps_1"
+            android:parentActivityName=".views.activity.GoogleSign">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.keepmeposted.views.activity.GoogleSign" />
+        </activity>
+        <activity
+            android:name=".views.activity.MyDeals"
+            android:label="My Deals" />
+        <activity android:name=".views.activity.CargillsDeals" />
+        <activity android:name=".views.activity.Settings"></activity>
+        <!--shazna-->
+        <!--<activity android:name=".BudgetPlanActivity"-->
+        <!--android:label="@string/title_activity_planBudget" />&lt;!&ndash; ATTENTION: This was auto-generated to add Google Play services to your project for-->
+        <!--App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. &ndash;&gt;-->
+        <!--<meta-data-->
+        <!--android:name="com.google.android.gms.version"-->
+        <!--android:value="@integer/google_play_services_version" />-->
+
+
+        <activity android:name=".views.activity.IncomeEditActivity"/>
+        <activity android:name=".views.activity.PlanBudgetActivity"/>
+        <activity android:name=".views.activity.BudgetCalenderActivity" android:label="Plan Budget"/>
+        <!--<activity android:name=".BudgetExpenseActivity"/>-->
+        <!--<activity android:screenOrientation="landscape" android:configChanges="orientation|keyboardHidden" android:name=".views.activity.BudgetExpenseActivity"/>-->
+        <activity android:name=".views.activity.BudgetExpenseActivity"/>
+        <!--end..shazna-->
+    </application>
+
+</manifest>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3498db</color>
+    <color name="colorPrimaryDark">#2980b9</color>
+    <color name="colorAccent">#1abc9c</color>
+    <color name="secondary_text">#2b2b2b</color>
+    <color name="colorWhite">#ecf0f1</color>
+    <color name="background_card">#fff</color>
+    <color name="text_black_87">#de000000</color>
+    <color name="text_white_87">#deffffff</color>
+    <color name="cast_libraries_material_featurehighlight_text_body_color"> #FFFFFF</color>
+    <color name="wallet_dim_foreground_disabled_holo_dark">#FFFFFF</color>
+    <color name="bg_login">#26ae90</color>
+    <color name="bg_register">#2e3237</color>
+    <color name="bg_main">#428bca</color>
+    <color name="white">#ffffff</color>
+    <color name="input_login">#222222</color>
+    <color name="input_login_hint">#999999</color>
+    <color name="input_register">#888888</color>
+    <color name="input_register_bg">#3b4148</color>
+    <color name="input_register_hint">#5e6266</color>
+    <color name="btn_login">#26ae90</color>
+    <color name="btn_login_bg">#eceef1</color>
+    <color name="lbl_name">#333333</color>
+    <color name="btn_logut_bg">#effdd2</color>
+    <color name="purered">#FF0000</color>
+    <item name="transparent" type="color">#00FFFFFF</item>
+    <item name="grey" type="color">#555555</item>
+    <item name="green" type="color">#4499CC00</item>
+    <item name="darkgreen" type="color">#FF669900</item>
+    <item name="red" type="color">#FF0000</item>
+</resources>

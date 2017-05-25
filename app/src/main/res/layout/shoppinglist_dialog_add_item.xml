@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:focusableInTouchMode="true">
+
+    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="10dp">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/itemTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/title"
+                            android:maxLines="1"
+                            android:inputType="textAutoComplete"
+                            />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="19dp">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/itemUnitPrice"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/unit_price"
+                            android:maxLines="1"
+                            android:inputType="number"
+                            />
+
+                    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/cancelButton"
+                        android:onClick="onCancelButtonPressed"
+                        android:text="@string/cancel"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:elegantTextHeight="false"
+                        android:textAlignment="center"
+                        android:layout_width="0dp"
+                        android:layout_weight=".50"
+                        style="@style/MyButtonCancel" />
+
+                    <Button
+                        android:id="@+id/addButton"
+                        android:onClick="onAddButtonPressed"
+                        android:text="@string/add_item"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:elegantTextHeight="false"
+                        android:textAlignment="center"
+                        android:layout_width="0dp"
+                        android:layout_weight=".50"
+                        style="@style/MyButton" />
+
+                    </LinearLayout>
+
+</LinearLayout>

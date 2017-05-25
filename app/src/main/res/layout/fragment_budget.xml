@@ -1,0 +1,1171 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/jobPostCoordinator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="24dp">
+
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/card_margin"
+            android:layout_marginLeft="@dimen/card_margin"
+            android:layout_marginRight="@dimen/card_margin">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                style="@style/Widget.CardContent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Plan Budget"
+                    android:background="@color/colorPrimary"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:textColor="@color/purered"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Plan your budget according to your income and expenses of a selected period."
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:stretchColumns="true">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="170dp"
+                            android:layout_height="wrap_content"
+                            android:text="" />
+
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Plan Budget"
+                            android:id="@+id/planbudget"
+                            android:theme="@style/MyButton"
+                            style="@style/MyButton"
+                            android:padding="0dp" />
+
+
+                    </TableRow>
+
+                </TableLayout>
+            </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/card_margin"
+                android:layout_marginLeft="@dimen/card_margin"
+                android:layout_marginRight="@dimen/card_margin">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    style="@style/Widget.CardContent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="View General Budget"
+                        android:textColor="@color/purered"
+                        android:background="@color/colorPrimary"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="View the budget of your planned and actual expenses for a selected period."
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                    <TableLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <Button
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:visibility="gone"
+                                android:id="@+id/buttonfrom"
+                                android:theme="@style/MyButton"
+                                style="@style/MyButton"
+                                android:padding="0dp" />
+
+                            <TextView
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:text="" />
+
+                            <Button
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:text="View General Budget"
+                                android:id="@+id/viewexpensebudg"
+                                android:theme="@style/MyButton"
+                                style="@style/MyButton"
+                                android:padding="0dp" />
+
+
+                        </TableRow>
+
+                    </TableLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/card_margin"
+                android:layout_marginLeft="@dimen/card_margin"
+                android:layout_marginRight="@dimen/card_margin"
+                android:id="@+id/viewShop">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    style="@style/Widget.CardContent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="View ShoppingList Budget"
+                        android:textColor="@color/purered"
+                        android:background="@color/colorPrimary"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="View your current budget for the shopping list and shopping cart."
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                    <TableLayout
+                        android:layout_width="300dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:stretchColumns="true">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+
+                            <Button
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:text="View Shopping Budget"
+                                android:id="@+id/viewtable"
+                                android:theme="@style/MyButton"
+                                style="@style/MyButton"
+                                android:paddingLeft="110dp"/>
+
+
+                        </TableRow>
+
+                    </TableLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/card_margin"
+                android:layout_marginLeft="@dimen/card_margin"
+                android:layout_marginRight="@dimen/card_margin"
+                android:id="@+id/tablecard"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    style="@style/Widget.CardContent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                        android:id="@+id/textviewfrom"
+                        android:text="Shopping List Budget"
+                        android:textColor="@color/colorAccent"
+                        android:textAlignment="center"/>
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/la1">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/rowheader"
+                        android:background="#E6E6FA">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="Category"
+                            android:id="@+id/header1"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                            android:textColor="#000000"/>
+
+                        <TextView
+                            android:text="Cart(Rs)"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/header2"
+                            android:textColor="#000000"/>
+
+                        <TextView
+                            android:text="List(Rs)"
+                            android:padding="5dp"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/header3"
+                            android:textColor="#000000"/>
+
+
+                    </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/row1">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:padding="5dp"
+                        android:text="Diary"
+                        android:id="@+id/c1"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:paddingLeft="10dp"
+                        android:layout_gravity="bottom"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+
+                        android:text=""
+                        android:id="@+id/cart1"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:paddingLeft="10dp"
+                        android:layout_gravity="bottom"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/cc1"
+                            android:layout_weight="1"
+                            android:layout_gravity="bottom"/>
+
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Vegetables"
+                        android:id="@+id/c2"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:paddingLeft="10dp"
+                        android:layout_gravity="bottom"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:padding="5dp"
+                        android:text=""
+                        android:id="@+id/cart2"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:paddingLeft="10dp"
+                        android:layout_gravity="bottom"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/cc2"
+                            android:layout_weight="1"
+                            android:layout_gravity="bottom"/>
+
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Fruites"
+                        android:id="@+id/c3"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:paddingLeft="10dp"
+                        android:layout_gravity="bottom"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:padding="5dp"
+                        android:text=""
+                        android:id="@+id/cart3"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:paddingLeft="10dp"
+                        android:layout_gravity="bottom"/>
+
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/cc3"
+                            android:layout_weight="1"
+                            android:layout_gravity="bottom"/>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Provisions"
+                        android:id="@+id/c4"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:paddingLeft="10dp"
+                        android:layout_gravity="bottom"/>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:padding="5dp"
+                        android:text=""
+                        android:id="@+id/cart4"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:paddingLeft="10dp"
+                        android:layout_gravity="bottom"/>
+
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/cc4"
+                            android:layout_weight="1"
+                            android:layout_gravity="bottom"/>
+
+                </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Medicine"
+                            android:id="@+id/c5"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:paddingLeft="10dp"
+                            android:layout_gravity="bottom"/>
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:padding="5dp"
+                            android:text=""
+                            android:id="@+id/cart5"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:paddingLeft="10dp"
+                            android:layout_gravity="bottom"/>
+
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/cc5"
+                                android:layout_weight="1"
+                                android:layout_gravity="bottom"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Beverages"
+                            android:id="@+id/c6"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:paddingLeft="10dp"
+                            android:layout_gravity="bottom"/>
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:padding="5dp"
+                            android:text=""
+                            android:id="@+id/cart6"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:paddingLeft="10dp"
+                            android:layout_gravity="bottom"/>
+
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/cc6"
+                                android:layout_weight="1"
+                                android:layout_gravity="bottom"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Gifts"
+                            android:id="@+id/c7"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:paddingLeft="10dp"
+                            android:layout_gravity="bottom"/>
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:padding="5dp"
+                            android:text=""
+                            android:id="@+id/cart7"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:paddingLeft="10dp"
+                            android:layout_gravity="bottom"/>
+
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/cc7"
+                                android:layout_weight="1"
+                                android:layout_gravity="bottom"/>
+
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Dress"
+                            android:id="@+id/c8"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:paddingLeft="10dp"
+                            android:layout_gravity="bottom"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text=""
+                            android:id="@+id/cart8"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:paddingLeft="10dp"
+                            android:layout_gravity="bottom"/>
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/cc8"
+                                android:layout_weight="1"
+                                android:layout_gravity="bottom" />
+
+                    </TableRow>
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#7FFFD4">
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="View Total"
+                        android:id="@+id/viewtotal"
+                        android:theme="@style/MyButton"
+                        style="@style/MyButton"
+                        android:padding="5dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/cartTotal"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tabletotal"
+                        android:text=""
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+                    </TableRow>
+                    </TableLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/card_margin"
+                android:layout_marginLeft="@dimen/card_margin"
+                android:layout_marginRight="@dimen/card_margin"
+                android:id="@+id/expensescard"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    style="@style/Widget.CardContent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                        android:id="@+id/selecteddate"/>
+
+                    <TableLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/la1e">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/rowheadere"
+                            android:background="#E6E6FA">
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:text="Expense"
+                                android:id="@+id/header1e"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                                android:textColor="#000000"/>
+
+                            <TextView
+                                android:text="Planned"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/header2e"
+                                android:textColor="#000000"/>
+
+                            <TextView
+                                android:text="Actual"
+                                android:padding="5dp"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/header3e"
+                                android:textColor="#000000"/>
+
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/row1e">
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:padding="5dp"
+                                android:text="Food"
+                                android:id="@+id/c1e"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:paddingLeft="10dp"
+                                android:layout_gravity="bottom"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:id="@+id/cart1e"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:paddingLeft="10dp"
+                                android:layout_gravity="bottom"/>
+
+                            <TextView
+                                android:text=""
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/cc1e"
+                                android:layout_weight="1"
+                                android:layout_gravity="bottom"/>
+
+
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Cloth"
+                                android:id="@+id/c2e"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:paddingLeft="10dp"
+                                android:layout_gravity="bottom"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:padding="5dp"
+                                android:text=""
+                                android:id="@+id/cart2e"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:paddingLeft="10dp"
+                                android:layout_gravity="bottom"/>
+
+                            <TextView
+                                android:text=""
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/cc2e"
+                                android:layout_weight="1"
+                                android:layout_gravity="bottom"/>
+
+
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Travelling"
+                                android:id="@+id/c3e"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:paddingLeft="10dp"
+                                android:layout_gravity="bottom"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:padding="5dp"
+                                android:text=""
+                                android:id="@+id/cart3e"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:paddingLeft="10dp"
+                                android:layout_gravity="bottom"/>
+
+
+                            <TextView
+                                android:text=""
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/cc3e"
+                                android:layout_weight="1"
+                                android:layout_gravity="bottom"/>
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Stationary"
+                                android:id="@+id/c4e"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:paddingLeft="10dp"
+                                android:layout_gravity="bottom"/>
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:padding="5dp"
+                                android:text=""
+                                android:id="@+id/cart4e"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:paddingLeft="10dp"
+                                android:layout_gravity="bottom"/>
+
+
+                            <TextView
+                                android:text=""
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/cc4e"
+                                android:layout_weight="1"
+                                android:layout_gravity="bottom"/>
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Furniture"
+                                android:id="@+id/c5e"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:paddingLeft="10dp"
+                                android:layout_gravity="bottom"/>
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:padding="5dp"
+                                android:text=""
+                                android:id="@+id/cart5e"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:paddingLeft="10dp"
+                                android:layout_gravity="bottom"/>
+
+
+                            <TextView
+                                android:text=""
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/cc5e"
+                                android:layout_weight="1"
+                                android:layout_gravity="bottom"/>
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Medicine"
+                                android:id="@+id/c6e"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:paddingLeft="10dp"
+                                android:layout_gravity="bottom"/>
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:padding="5dp"
+                                android:text=""
+                                android:id="@+id/cart6e"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:paddingLeft="10dp"
+                                android:layout_gravity="bottom"/>
+
+
+                            <TextView
+                                android:text=""
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/cc6e"
+                                android:layout_weight="1"
+                                android:layout_gravity="bottom"/>
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Bill"
+                                android:id="@+id/c7e"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:paddingLeft="10dp"
+                                android:layout_gravity="bottom"/>
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:padding="5dp"
+                                android:text=""
+                                android:id="@+id/cart7e"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:paddingLeft="10dp"
+                                android:layout_gravity="bottom"/>
+
+
+                            <TextView
+                                android:text=""
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/cc7e"
+                                android:layout_weight="1"
+                                android:layout_gravity="bottom"/>
+
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Utensils"
+                                android:id="@+id/c8e"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:paddingLeft="10dp"
+                                android:layout_gravity="bottom"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:text=""
+                                android:id="@+id/cart8e"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:paddingLeft="10dp"
+                                android:layout_gravity="bottom"/>
+
+                            <TextView
+                                android:text=""
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/cc8e"
+                                android:layout_weight="1"
+                                android:layout_gravity="bottom" />
+
+                        </TableRow>
+
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#7FFFD4">
+
+                            <TextView
+                                android:text="Total"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/viewtot"
+                                android:layout_weight="1"
+                                android:layout_gravity="bottom" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/planTot"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/actualTot"
+                                android:text=""
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+                        </TableRow>
+                    </TableLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/card_margin"
+                android:layout_marginLeft="@dimen/card_margin"
+                android:layout_marginRight="@dimen/card_margin"
+                android:id="@+id/checkboxcard"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    style="@style/Widget.CardContent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                        android:id="@+id/output"
+                        android:text="Category Wise Summary"/>
+
+
+                    <TableLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/checktable">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+
+                            <android.support.v7.widget.AppCompatCheckBox
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/s1"
+                                android:text="Diary">
+
+
+                            </android.support.v7.widget.AppCompatCheckBox>
+
+
+
+                            <android.support.v7.widget.AppCompatCheckBox
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/s2"
+                                android:clickable="true"
+                                android:text="Vegetables"
+                                android:layout_marginLeft="@dimen/card_margin">
+
+                            </android.support.v7.widget.AppCompatCheckBox>
+
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+
+                            <android.support.v7.widget.AppCompatCheckBox
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/s3"
+                                android:text="Fruites">
+
+                            </android.support.v7.widget.AppCompatCheckBox>
+
+                            <android.support.v7.widget.AppCompatCheckBox
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/s4"
+                                android:text="Provisions"
+                                android:layout_marginLeft="@dimen/card_margin">
+
+                            </android.support.v7.widget.AppCompatCheckBox>
+
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <android.support.v7.widget.AppCompatCheckBox
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/s5"
+                                android:text="Medicine">
+
+                            </android.support.v7.widget.AppCompatCheckBox>
+
+                            <android.support.v7.widget.AppCompatCheckBox
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/s6"
+                                android:text="Beverages"
+                                android:layout_marginLeft="@dimen/card_margin">
+
+                            </android.support.v7.widget.AppCompatCheckBox>
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <android.support.v7.widget.AppCompatCheckBox
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/s7"
+                                android:text="Gifts">
+
+                            </android.support.v7.widget.AppCompatCheckBox>
+
+                            <android.support.v7.widget.AppCompatCheckBox
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/s8"
+                                android:text="Dress"
+                                android:layout_marginLeft="@dimen/card_margin">
+
+                            </android.support.v7.widget.AppCompatCheckBox>
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <Button
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Generate Chart"
+                                android:id="@+id/generateCatPie"
+                                android:theme="@style/MyButton"
+                                style="@style/MyButton"
+                                android:padding="0dp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                                android:id="@+id/catTotal"/>
+
+
+                        </TableRow>
+
+                    </TableLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/card_margin"
+            android:layout_marginLeft="@dimen/card_margin"
+            android:layout_marginRight="@dimen/card_margin"
+            android:id="@+id/piecard"
+            android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            style="@style/Widget.CardContent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp">
+
+                <com.github.mikephil.charting.charts.PieChart
+                    android:id="@+id/m_piechat"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </com.github.mikephil.charting.charts.PieChart>
+            </LinearLayout>﻿
+
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>
